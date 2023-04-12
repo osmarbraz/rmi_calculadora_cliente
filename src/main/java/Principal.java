@@ -55,10 +55,10 @@ public class Principal {
 
             }
 
-        } catch (RemoteException ex) {
-            System.out.println("Excecao: " + ex.getMessage());
-        } catch (NotBoundException ex) {
-            System.out.println("Excecao: " + ex.getMessage());
+        } catch (RemoteException ree) {
+            System.out.println("Excecao: " + ree.getMessage());
+        } catch (NotBoundException nbe) {
+            System.out.println("Excecao: " + nbe.getMessage());
         }
     }
 }
