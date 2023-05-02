@@ -3,7 +3,7 @@
 ## Contextualização
 
 - Programa cliente Java RMI de objeto calculadora.
-- Use o repositório "rmi_servidor_calculadora" como o programa servidor.
+- Use o repositório "rmi_calculadora_servidor" como o programa servidor.
 
 ## Arquivos
 
