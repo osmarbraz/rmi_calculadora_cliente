@@ -24,29 +24,29 @@ public class Principal {
             Calculadora calculadora = (Calculadora) obj;
             int opcao = -1;
             while (opcao != 9) {
-                opcao = Integer.parseInt(JOptionPane.showInputDialog("Menu da Calculadora: \n1 - Adicao \n2 - Subtracao \n3 - Produto \n4 - Divisão \n9 - Sair"));
+                opcao = Integer.parseInt(JOptionPane.showInputDialog("Menu da Calculadora: \n1 - Adição \n2 - Subtração \n3 - Multiplicação \n4 - Divisão \n9 - Sair"));
                 if (opcao == 1) {
                     int valorA = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor A da adicao:"));
                     int valorB = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor B da adicao:"));
-                    int resultado = calculadora.adicao(valorA, valorB);
-                    System.out.println("O resultado da adicao e:" + resultado);
+                    int resultado = calculadora.soma(valorA, valorB);
+                    System.out.println("O resultado da adição e:" + resultado);
                 } else {
                     if (opcao == 2) {
-                        int valorA = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor A da subtracao:"));
-                        int valorB = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor B da subtracao:"));
-                        int resultado = calculadora.subtracao(valorA, valorB);
-                        System.out.println("O resultado da subtracao e:" + resultado);
+                        int valorA = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor A da subtração:"));
+                        int valorB = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor B da subtração:"));
+                        int resultado = calculadora.diferenca(valorA, valorB);
+                        System.out.println("O resultado da subtração e:" + resultado);
                     } else {
                         if (opcao == 3) {
-                            int valorA = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor A do produto:"));
-                            int valorB = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor B da produto:"));
+                            int valorA = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor A da multiplicação:"));
+                            int valorB = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor B da multiplicação:"));
                             int resultado = calculadora.produto(valorA, valorB);
-                            System.out.println("O resultado do produto e:" + resultado);
+                            System.out.println("O resultado do multplicação e:" + resultado);
                         } else {
                             if (opcao == 4) {
                                 int valorA = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor A da divisao:"));
                                 int valorB = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor B da divisao:"));
-                                double resultado = calculadora.divisao(valorA, valorB);
+                                double resultado = calculadora.quociente(valorA, valorB);
                                 System.out.println("O resultado da divisao e:" + resultado);
                             }
                         }
